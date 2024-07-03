@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bf65217d96.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+<nav class="navbar">
+    <div class="navbar-center">
+        <span class="nav-icon">
+            <i class="fa-solid fa-bars"></i>
+        </span>
+        <img src="images/logo.svg" alt="store logo">
+        <div class="cart-btn">
+            <span class="nav-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </span>
+            <div class="cart-items">0</div>
+        </div>
+    </div>
+</nav>
+<!-- end of navbar -->
+ <!-- hero -->
+  <header class="hero">
+    <div class="banner">
+        <h1 class="banner-title">furniture collection</h1>
+        <button class="banner-btn">shop now</button>
+    </div>
+  </header>
+<!-- end of hero -->
+ <!-- products -->
+<section class="products">
+    <div class="section-title">
+        <h2>our products</h2>
+        <div class="products-center">
+            <!-- single product -->
+            <article class="product">
+                <div class="img-container">
+                    <img src="images/product-1.jpeg" alt="product" class="product-img">
+                    <button class="bag-btn" data-id="1">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        add to cart 
+                    </button>
+                </div>
+                <h3>queen bed</h3>
+                <h4>$16</h4>
+            </article>
+            <!-- end of single product -->
+        </div>
+    </div>
+</section>
+ <!-- end of products -->
+  <!-- cart -->
+<div class="cart-overlay"></div>
+    <div class="cart">
+        <span class="close-cart">
+            <i class="fa-solid fa-rectangle-xmark"></i>
+        </span>
+        <h2>your cart</h2>
+        <div class="cart-content">
+        <!-- cart item -->
+            <!-- <div class="cart-item"> commented out b/c dynamically added in JS -->
+                <!-- <img src="images/product-1.jpeg" alt="product">
+                <div>
+                    <h4>queen bed</h4>
+                    <h5>$9.00</h5>
+                    <span class="remove-item">remove</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chevron-up"></i>
+                    <p class="item-amount">1</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div> -->
+            <!-- </div> -->
+        <!-- end of cart item -->
+        </div>
+        <div class="cart-footer">
+            <h3>your total: $ <span class="cart-total">0</span></h3>
+            <button class="clear-cart banner-btn">clear cart</button>
+        </div>
+    </div>
+</div>
+<!-- end of cart -->
+ <!-- contentful api -->
+<script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
